@@ -1,10 +1,3 @@
-How is my app better?
-
-- Newer data
-- Date time picker 
-- More data coverage
-- More accuracy
-
 Install the required libraries: "pip install -r libraries.txt" 
 
 FIPS Code data:
@@ -81,17 +74,3 @@ Backend:
     - Move merged_data.csv to /static
     - Run static/split_merged_data.py: To split data for each year for performance
     - Run backend.py to run the app
-
-TODO:
-
-- GitHub
-- Host on AWS
-- Tell a story:
-    - 06/25/2006: All big wildfires happended in the areas where the max temperature is high, no rain, 
-    while the areas with high precipation and less temperature exerience no to small wildfires
-    - Some areas got big wildfires even with not too high temperature because wildfires can also happen 
-    because of human activies 
-    - Show all California and compare with the live
-
-- Write a paper (Fix the layout, Grammar, and Plagiarism and AI checks)
-
