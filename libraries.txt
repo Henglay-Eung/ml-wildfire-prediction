@@ -1,0 +1,17 @@
+pandas
+numpy
+openpyxl
+scikit-learn
+tensorflow
+geopandas
+shapely
+h5netcdf
+xarray
+matplotlib
+fastapi
+uvicorn
+websockets
+python-socketio
+jinja2
+seaborn
+xgboost
