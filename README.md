@@ -45,37 +45,37 @@ Wildfire data:
 - Download:
     - FPA_FOD_20170508.sqlite: Wildfire data from 1992 to 2020 from https://www.fs.usda.gov/rds/archive/catalog/RDS-2013-0009.6
 - Run:
-    - Run preprocess/wildfire/extract_wild_fire_data.py to extract wildfire data
+    - Run preprocess/wildfire/extract_wild_fire_data.py to extract wildfire data.
     - Run preprocess/wildfire/find_avg_wildfire.py to calculate average fire size in a fips.
     - Run preprocess/wildfire/fill_missing_value.py to add missing wildfire data.
 
 Merged data:
-    - Run processed_datasets/merge_data/merge_tp_fuel.py: To merge TP and Fuel data by fips and date
-    - Run processed_datasets/merge_data/merge_tp_fuel_wind.py: To merge TP, Fuel, and Wind data by fips and date
-    - Run processed_datasets/merge_data/merge_tp_fuel_wind_fire.py: To merge TP, Fuel, Wind, and wildfire data by fips and date
-    - Run processed_datasets/merge_data/remove_outliers.py: To remove  outliers from the merged data
+- Run processed_datasets/merge_data/merge_tp_fuel.py: To merge TP and Fuel data by fips and date.
+- Run processed_datasets/merge_data/merge_tp_fuel_wind.py: To merge TP, Fuel, and Wind data by fips and date.
+- Run processed_datasets/merge_data/merge_tp_fuel_wind_fire.py: To merge TP, Fuel, Wind, and wildfire data by fips and date.
+- Run processed_datasets/merge_data/remove_outliers.py: To remove  outliers from the merged data.
 
 Training models:
-    - Run training/train_linear_gression.py: To train a model using LinearRegression algorithm
-    - Run training/train_xgboost.py: To train a model using eXtreme Gradient Boosting algorithm
-    - Run training/train_random_forest.py: To train a model using RandomForest algorithm
-    - Run training/train_xgboost_tuning.py: To tune a model using eXtreme Gradient Boosting algorithm
-    - Run training/train_xgboost_best_params.py: To train a model using eXtreme Gradient Boosting algorithm and best paramters received from tuning
+- Run training/train_linear_gression.py: To train a model using LinearRegression algorithm
+- Run training/train_xgboost.py: To train a model using eXtreme Gradient Boosting algorithm
+- Run training/train_random_forest.py: To train a model using RandomForest algorithm
+- Run training/train_xgboost_tuning.py: To tune a model using eXtreme Gradient Boosting algorithm
+- Run training/train_xgboost_best_params.py: To train a model using eXtreme Gradient Boosting algorithm and best paramters received from tuning
 
 Obtain real time data:
-    - Run obtain_real_time_weather_data.py: To get real-time weather for prediction
-    - Run merge_real_time_weather_data_and_fuel: To merge weather data with fuel for prediction
+- Run obtain_real_time_weather_data.py: To get real-time weather for prediction
+- Run merge_real_time_weather_data_and_fuel: To merge weather data with fuel for prediction
 
 Prediction:
-    - Run predict.py to run prediction on the real-time weather data
-    - Move predicted_fire_sizes.csv to /static
+- Run predict.py to run prediction on the real-time weather data
+- Move predicted_fire_sizes.csv to /static
 
 Backend:
-    - Move future_weather_data_with_fuel.csv to /static
-    - Move predicted_fire_size.csv to /static
-    - Move merged_data.csv to /static
-    - Run static/split_merged_data.py: To split data for each year for performance
-    - Run backend.py to run the app
+- Move future_weather_data_with_fuel.csv to /static
+- Move predicted_fire_size.csv to /static
+- Move merged_data.csv to /static
+- Run static/split_merged_data.py: To split data for each year for performance
+- Run backend.py to run the app
 
 
 The repository only includes processed and enough data to run the application due to GitHub's policies with large files, so feel free to download the compressed project to see the full version.
