@@ -80,4 +80,4 @@ Backend:
 
 The repository only includes processed and enough data to run the application due to GitHub's policies with large files, so feel free to download the compressed project to see the full version.
 
-(Compressed project)[https://drive.google.com/file/d/1yOfXsETHMAo1dSbVO38c1fm2jwjx9RDH/view?usp=sharing]
+[Compressed project](https://drive.google.com/file/d/1yOfXsETHMAo1dSbVO38c1fm2jwjx9RDH/view?usp=sharing)
